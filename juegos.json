@@ -1,0 +1,44 @@
+{
+    "juegos": [
+        {
+            "nombre": "Blasphemous 2",
+            "enlaces": {
+                "InstantGaming": "https://www.instant-gaming.com/es/14032-comprar-steam-blasphemous-2-pc-juego-steam-europe/?_gl=1*5vdyqn*_up*MQ..&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPucJggKhNBMfqKLgjX3M4KCaHE2suMJOxpkwJTY_38mRM-YafQr9QAaAsB8EALw_wcB",
+                "Eneba": "https://www.eneba.com/steam-blasphemous-2-pc-steam-key-europe",
+                "Steam": "https://store.steampowered.com/app/2114740/Blasphemous_2/"
+            }
+        },
+        {
+            "nombre": "Echo Point Nova",
+            "enlaces": {
+                "InstantGaming": "",
+                "Eneba": "https://www.eneba.com/steam-echo-point-nova-pc-steam-key-global",
+                "Steam": "https://store.steampowered.com/app/1836730/Echo_Point_Nova/"
+            }
+        },
+        {
+            "nombre": "Cyber Hook",
+            "enlaces": {
+                "InstantGaming": "https://www.instant-gaming.com/es/7775-comprar-steam-cyber-hook-pc-juego-steam/?_gl=1*1spw44*_up*MQ..&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPucJggKhNBMfqKLgjX3M4KCaHE2suMJOxpkwJTY_38mRM-YafQr9QAaAsB8EALw_wcB",
+                "Eneba": "https://www.eneba.com/steam-cyber-hook-steam-key-global",
+                "Steam": "https://store.steampowered.com/app/1130410/Cyber_Hook/"
+            }
+        },
+        {
+            "nombre": "Hell of an office",
+            "enlaces": {
+                "InstantGaming": "",
+                "Eneba": "",
+                "Steam": "https://store.steampowered.com/app/1640890/Hell_of_an_Office/"
+            }
+        },
+        {
+            "nombre": "Cathedral",
+            "enlaces": {
+                "InstantGaming": "",
+                "Eneba": "https://www.eneba.com/cathedral-nintendo-switch",
+                "Steam": "https://store.steampowered.com/app/1056180/Cathedral/"
+            }
+        }
+    ]
+}
