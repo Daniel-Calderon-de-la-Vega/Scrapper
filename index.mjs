@@ -17,16 +17,12 @@ async function main() {
         const juegos = JSON.parse(data).juegos;
 
         rl.question('Introduce el nombre del juego: ', async (nombreJuego) => {
-            // Buscar el juego en el JSON
             const juegoEncontrado = juegos.find(juego => juego.nombre.toLowerCase() === nombreJuego.toLowerCase());
 
             if (juegoEncontrado) {
                 console.log(`Juego encontrado: ${juegoEncontrado.nombre}`);
-
-                // Obtener los enlaces
                 const enlaces = juegoEncontrado.enlaces;
 
-                // Aquí puedes llamar a tu función de scraping y pasarle los enlaces
                 await Scrapper(enlaces);
 
             } else {
@@ -46,13 +42,13 @@ async function Scrapper(enlaces) {
     const enlaceInstant = enlaces.InstantGaming;
     const enlaceEneba = enlaces.Eneba;
     const enlaceSteam = enlaces.Steam;
+    let Instant = null;
+    let Eneba = null;
+    let Steam = null;
 
     const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage();
 
-    let Instant = null; // Definir la variable Instant
-    let Eneba = null; // Definir la variable Eneba
-    let Steam = null; // Definir la variable Steam
 
     if (enlaceInstant) {
         await page.goto(enlaceInstant);
@@ -116,10 +112,8 @@ async function Scrapper(enlaces) {
             }).filter(item => item !== null);
         });
 
-        // Eliminar los precios que sean iguales en ambas listas
         const preciosFiltradosJuego = preciosJuego.filter(precio => !preciosDLC.includes(precio));
 
-        // Encontrar el precio más bajo de la lista filtrada
         Steam = preciosFiltradosJuego.length > 0 ? Math.min(...preciosFiltradosJuego) : null;
 
         if (Steam !== null) {
